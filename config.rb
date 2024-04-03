@@ -12,6 +12,8 @@ end
 
 activate :image_tracker
 
+set :js_dir, "javascripts"
+
 activate :external_pipeline,
   name: :ember,
   command: "cd frontend/ && ember #{build? ? :build : :serve} --environment #{config[:environment]}",
