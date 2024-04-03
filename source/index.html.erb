@@ -1,0 +1,15 @@
+---
+title: emberman
+image_page_list:
+  - "https://drop.com/buy/planck-mechanical-keyboard?defaultSelectionIds=984963"
+  - "https://drop.com/buy/drop-olkb-preonic-acute-keycaps"
+---
+
+<h1><%= current_page.data.title %></h1>
+<br>
+<% current_page.data.image_page_list.each do |link| %>
+  <div class="dashboard-images">
+    <%= make_images(link) %>
+  </div>
+<% end %>
+
